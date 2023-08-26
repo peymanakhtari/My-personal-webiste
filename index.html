@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>پیمان اختری - Peyman Akhtari</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/in-view@0.6.1/dist/in-view.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/tailwind.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"
+        integrity="sha512-CmlPTWm5+a1Gt2YSNk2rGZVvbH3Zge6imS7M4/vrhC8d+A1RcehmLxWMqUdv8aEu7pwfTo74EtnrR+8Cf8KdCA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"
+        integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/menuIcon.css" />
+    <link rel="stylesheet" href="/css/contactIcons.css" />
+</head>
+
+<body>
+    <div id="menu-button" class="lg:hidden">
+        <span class="iconBackground scale-[.8] lg:hidden"></span>
+        <label id="menu-icon" class="z-30 scale-[.6] lg:hidden" for="check">
+            <input type="checkbox" id="check" />
+            <span class="span"></span>
+            <span class="span"></span>
+            <span class="span"></span>
+        </label>
+    </div>
+
+    <nav id="mobileNav" class="flex flex-wrap content-center justify-center">
+        <ul class="">
+            <li><a class="link" href="/index.html">Main page</a></li>
+            <li><a class="link" href="/portfolio.html">Portfolio</a></li>
+            <li><a class="link" href="/index.html#aboutme">About me</a></li>
+            <li><a class="link" href="/index.html#skills">Skills</a></li>
+            <li><a class="link" href="/index.html#contactMe">Contact me</a></li>
+            <li>
+                <a class="mt-2 block rounded bg-[#0a66c2] px-4 py-2 hover:opacity-70"
+                    href="https://www.linkedin.com/in/peyman-akhtari/">LinkedIn</a>
+            </li>
+            <li>
+                <a class="mt-2 text-center block rounded bg-[#171515] px-4 py-2 hover:opacity-70"
+                    href="https://github.com/peymanakhtari">GitHub</a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav id="desktopNav" class="fixed z-30 hidden w-full text-white lg:block">
+        <ul class="flex flex-row justify-center">
+            <li><a class="link" href="/index.html">Main page</a></li>
+            <li><a class="link" href="/portfolio.html">Portfolio</a></li>
+            <li><a class="link" href="/index.html#aboutme">About me</a></li>
+            <li><a class="link" href="/index.html#skills">Skills</a></li>
+            <li><a class="link" href="/index.html#contactMe">Contact me</a></li>
+            <li>
+                <a class="rounded bg-[#0a66c2] px-6 py-3 hover:opacity-70"
+                    href="https://www.linkedin.com/in/peyman-akhtari/">LinkedIn</a>
+            </li>
+            <li>
+                <a class="rounded text-center bg-[#171515] px-6 py-3 hover:opacity-70"
+                    href="https://github.com/peymanakhtari">GitHub</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <style>
+        #txtEmail::placeholder,
+        #txtMessage::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            font-weight: bold;
+            color: rgb(117, 117, 117);
+            /* Firefox */
+        }
+
+        #menu-button {
+            opacity: 0;
+        }
+    </style>
+
+    <canvas id="canvas-basic"></canvas>
+
+    <header id="header"
+        class="relative mx-auto h-[50vh] max-h-[25rem] min-h-[20rem] w-[35rem] max-w-[80%] lg:w-[50rem]">
+        <article id="titlepage" class="absolute left-0 top-20 sm:top-40">
+            <div class="text-2xl font-bold lg:text-3xl">Peyman Akhtari</div>
+            <h1 class="w-[50vw] min-w-[17rem] text-lg lg:text-xl">
+                <span id="typed1"></span> <span id="typed2">web developer</span>
+            </h1>
+        </article>
+        <nav id="" class="headerNav absolute right-7 top-52 scale-[1.3] sm:top-32 md:right-0 lg:scale-[1.4]">
+            <ul>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contactMe">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="text-center">
+        <div style="visibility: hidden"
+            class="portfoDiv group relative inline-block h-12 w-72 text-[18px] lg:h-14 lg:w-[22rem] lg:text-[22px]">
+            <a href="/portfolio.html"
+                class="absolute z-10 block w-full transition-all duration-500 translate-y-1/2 protfoH3 animate__animated animate__delay-1s bottom-1/2 text-zinc-100">
+                Check out my portfolio
+            </a>
+            <span
+                class="absolute top-0 right-0 w-full h-full transition-all duration-500 portfoSpan animate__animated animate__delay-2s rounded-3xl bg-zinc-950 group-hover:bg-zinc-800"></span>
+        </div>
+    </div>
+
+    <main class="container mx-auto xl:max-w-[70rem]">
+        <section class="mt-24" id="aboutme">
+            <div class="px-[4vw]">
+                <h2 class="mb-4 text-left">About me</h2>
+                <img data-aos-duration="700" data-aos="fade-up"
+                    class="float-right mb-5 ml-3 mr-0 w-[35%] max-w-[14rem] rounded-md shadow-sm 2xs:w-[40%] md:ml-5"
+                    src="/img/peymanakhtari.jpg" alt="" />
+                <p class="text-justify text-[14px] leading-7 [word-spacing:0px] xs:text-[15px]">
+                    I've been a full-stack web developer for over five years. I started my
+                    programming journey with Xamarin for Android, but soon I became
+                    interested in web development. I handle everything on a website on my
+                    own, including design, front-end and back-end development, deployment,
+                    and support. <br>
+                    If you need a custom website , I will create the website from scratch. I edit the website until it
+                    perfectly aligns with your requirements.
+
+
+                </p>
+            </div>
+        </section>
+        <section class="block mt-20" id="skills">
+            <div class="px-[4vw]">
+                <h2 class="text-left">Skills</h2>
+                <div class="skillBoxContainer">
+                    <div data-aos="zoom-in" data-aos-duration="500" id="firstSkillbox" class="skillBox">
+                        <span>Languages</span>
+                        <div class="skillCard">
+                            <p><span>C#</span><span class="expert">Expert</span></p>
+                            <p><span>JavaScript</span><span class="skilled">Skilled</span></p>
+                            <p>
+                                <span>TypeScript</span><span class="Experienced">Experienced</span>
+                            </p>
+                            <p><span>Java</span><span class="learning">Learning</span></p>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="500" class="skillBox">
+                        <span>Web frame-works</span>
+                        <div class="skillCard">
+                            <p><span>ASP.NET Core</span><span class="skilled">Skilled</span></p>
+                            <p><span>JQuery</span><span class="expert">Expert</span></p>
+                            <p><span>Bootstrap</span><span class="expert">Expert</span></p>
+                            <p><span>Angular</span><span class="learning">Learning</span></p>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="500" class="skillBox">
+                        <span>UI-Ux</span>
+                        <div class="skillCard">
+                            <p><span>HTML</span><span class="expert">Expert</span></p>
+                            <p><span>CSS</span><span class="expert">Expert</span></p>
+                            <p><span>Tailwind CSS</span><span class="skilled">Skilled</span></p>
+                            <p><span>Ajax(JQuery)</span><span class="expert">Expert</span></p>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="500" class="skillBox">
+                        <span>Database & ORM</span>
+                        <div class="skillCard">
+                            <p><span>MSSQL</span><span class="skilled">Skilled</span></p>
+                            <p><span>EFCore</span><span class="expert">Expert</span></p>
+                            <p><span>ADO.NET</span><span class="skilled">Skilled</span></p>
+                            <p><span>Dapper</span><span class="learning">Learning</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mx-auto mt-24 text-center bg-zinc-200" id="contactMe">
+            <div class="h-7"></div>
+            <h2 class="mb-8">Contact me</h2>
+
+            <div class="relative h-12">
+                <div
+                    class="absolute inline-block w-0 h-full mx-auto transition-all duration-500 translate-x-1/2 bg-black rounded-sm emailBg right-1/2">
+                </div>
+                <input id="txtEmail" autocomplete="off" placeholder="Your Email"
+                    class="absolute right-0 top-0 w-full rounded bg-transparent py-3 text-center text-[18px] text-zinc-200 focus:outline-0"
+                    type="text" />
+            </div>
+            <div class="relative h-32 mt-4">
+                <div
+                    class="absolute inline-block w-0 h-full mx-auto transition-all duration-500 translate-x-1/2 bg-black rounded-sm messageBg right-1/2">
+                </div>
+                <textarea
+                    class="absolute right-0 top-0 mt-5 w-full resize-none rounded-sm bg-transparent pt-7 text-center text-[18px] text-zinc-200 focus:outline-0"
+                    placeholder="Your message" name="" id="txtMessage" cols="30" rows="3"></textarea>
+            </div>
+            <div>
+                <button type="button" id="btnSendMessage"
+                    class="px-10 py-3 mt-4 font-sans font-bold rounded shadow bg-zinc-400 hover:bg-zinc-300">
+                    Send
+                </button>
+            </div>
+            <div class="h-7"></div>
+        </section>
+        <div class="relative mt-0 social-btns md:mt-10">
+            <div
+                class="absolute right-1/2 w-[35rem] translate-x-1/2 scale-[.6] xs:scale-[.7] md:w-[50rem] md:scale-[.85] lg:scale-100">
+                <a data-aos="flip-left" href="https://www.facebook.com/profile.php?id=100004117218294"
+                    class="btn facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a data-aos="flip-left" href="https://github.com/peymanakhtari" data-aos-delay="150" class="btn github">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a data-aos="flip-left" href="mailto:peyman.firelance@gmail.com" data-aos-delay="300"
+                    class="btn google">
+                    <i class="fa fa-google"></i>
+                </a>
+                <a data-aos="flip-left" href="https://www.linkedin.com/in/peyman-akhtari/" data-aos-delay="450"
+                    class="btn linkedin">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a data-aos="flip-left" href="https://wa.me/+989171898681?text=" data-aos-delay="600"
+                    class="btn whatsapp">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <div onclick="closeAlert1()" id="Alert1"
+        class="fixed top-0 right-0 z-50 hidden w-full h-full bg-zinc-950 bg-opacity-80">
+        <div onclick="doNothing(event)"
+            class="fixed right-1/2 top-1/2 h-72 w-3/4 max-w-[30rem] translate-x-1/2 translate-y-[-50%] rounded bg-slate-200 px-6 pt-16">
+            <p class="text-center text-[20px]">
+                This is html website, to send message, email me with: peyman.firelance@gmail.com
+            </p>
+            <button onclick="closeAlert1()"
+                class="block px-8 py-2 mx-auto mt-6 rounded bg-zinc-900 text-zinc-100 hover:bg-zinc-700">
+                close
+            </button>
+        </div>
+    </div>
+
+    <script src="/js/homeIndex.js"></script>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    <script src="/js/js.js"></script>
+
+</body>
+
+</html>

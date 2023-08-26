@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>پیمان اختری - Peyman Akhtari</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/in-view@0.6.1/dist/in-view.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/tailwind.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"
+        integrity="sha512-CmlPTWm5+a1Gt2YSNk2rGZVvbH3Zge6imS7M4/vrhC8d+A1RcehmLxWMqUdv8aEu7pwfTo74EtnrR+8Cf8KdCA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"
+        integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/menuIcon.css" />
+    <link rel="stylesheet" href="/css/contactIcons.css" />
+</head>
+
+<body>
+    <div id="menu-button" class="lg:hidden">
+        <span class="iconBackground scale-[.8] lg:hidden"></span>
+        <label id="menu-icon" class="z-30 scale-[.6] lg:hidden" for="check">
+            <input type="checkbox" id="check" />
+            <span class="span"></span>
+            <span class="span"></span>
+            <span class="span"></span>
+        </label>
+    </div>
+
+    <nav id="mobileNav" class="flex flex-wrap content-center justify-center">
+        <ul class="">
+            <li><a class="link" href="/index.html">Main page</a></li>
+            <li><a class="link" href="/portfolio.html">Portfolio</a></li>
+            <li><a class="link" href="/index.html#aboutme">About me</a></li>
+            <li><a class="link" href="/index.html#skills">Skills</a></li>
+            <li><a class="link" href="/index.html#contactMe">Contact me</a></li>
+            <li>
+                <a class="mt-2 block rounded bg-[#0a66c2] px-4 py-2 hover:opacity-70"
+                    href="https://www.linkedin.com/in/peyman-akhtari/">LinkedIn</a>
+            </li>
+            <li>
+                <a class="mt-2 text-center block rounded bg-[#171515] px-4 py-2 hover:opacity-70"
+                    href="https://github.com/peymanakhtari">GitHub</a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav id="desktopNav" class="fixed z-30 hidden w-full text-white lg:block">
+        <ul class="flex flex-row justify-center">
+            <li><a class="link" href="/index.html">Main page</a></li>
+            <li><a class="link" href="/portfolio.html">Portfolio</a></li>
+            <li><a class="link" href="/index.html#aboutme">About me</a></li>
+            <li><a class="link" href="/index.html#skills">Skills</a></li>
+            <li><a class="link" href="/index.html#contactMe">Contact me</a></li>
+            <li>
+                <a class="rounded bg-[#0a66c2] px-6 py-3 hover:opacity-70"
+                    href="https://www.linkedin.com/in/peyman-akhtari/">LinkedIn</a>
+            </li>
+            <li>
+                <a class="rounded text-center bg-[#171515] px-6 py-3 hover:opacity-70"
+                    href="https://github.com/peymanakhtari">GitHub</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <link rel="stylesheet" href="/css/portfolio.css" />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <main class="container mx-auto xl:max-w-[70rem]">
+        <section class="pl-4 mt-8 portfolio lg:hidden" id="portfolioMobile">
+            <div class="mx-auto w-[90%] max-w-[30rem]">
+                <h2 data-aos="fade-zoom-in" data-aos-offset="200" class="mb-0 text-left">
+                    Portfolio
+                </h2>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="800" data-aos-offset="150"
+                class="projectMobile group mt-7 bg-[#e7ffe9] p-10">
+                <div class="absolute z-10 h-32 w-50 left-2 top-2">
+                    <a class="relative inline-block transition-all duration-75 projectTitle before:bg-black hover:opacity-60"
+                        href="https://radicaltherapy.ir/">Radicaltherapy.ir</a>
+                    <span class="projectDesk mt-2 block text-[15px] text-zinc-950">
+                        Mental health & <br />
+                        psychology treatment
+                    </span>
+                    <a
+                        class="inline-block px-3 py-2 mt-1 text-sm text-white rounded featureList bg-stone-800 hover:bg-stone-700">Features</a>
+                </div>
+                <img src="/img/radicaltherapymoile2.png"
+                    class="imgradical w-100 drop-shadow-[-0px_0px_.7px_rgba(20,20,20,0.2)] group-hover:drop-shadow-[-2px_2px_4px_rgba(20,20,20,0.2)]"
+                    alt="" />
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="800" class="projectMobile group bg-[#3f3f3f]">
+                <div class="absolute z-10 mt-1 ml-2">
+                    <a class="projectTitle relative inline-block text-white transition-all duration-75 before:top-[1.6rem] before:bg-slate-50 hover:opacity-60"
+                        href="https://hotel.peymanakhtari.com/">hotel.peymanakhtari.com</a>
+                    <span class="projectDesk block text-[15px] font-light text-slate-50">Hotel management panel</span>
+                    <a class="block" href=""></a>
+                    <a
+                        class="inline-block px-3 py-2 mt-4 text-sm rounded featureList bg-stone-800 text-slate-50 hover:bg-stone-700">Features</a>
+                </div>
+                <img src="/img/imghotel10.png"
+                    class="absolute right-[50%] top-[30%] mx-auto w-[75%] translate-x-1/2 scale-[120%] transition-all duration-500 group-hover:scale-[140%] group-hover:drop-shadow-[-5px_-5px_13px_rgba(20,20,20,0.65)]"
+                    alt="" />
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="800" class="projectMobile maysam relative bg-[rgb(19,19,19)]">
+                <div class="absolute z-10 mt-1 ml-2 text-white">
+                    <a class="relative inline-block font-normal transition-all duration-75 projectTitle before:bg-white hover:opacity-60"
+                        href="https://broedermaysam.nl/">Broedermaysam.nl</a>
+                    <span class="projectDesk block text-[15px] font-light text-neutral-400">
+                        Nursing services & health care
+                    </span>
+                </div>
+                <img class="absolute bottom-2/4 right-[3%] top-[24%] w-[60%] scale-[.95] 2xs:top-[17%]"
+                    src="/img/maysam2.jpg" alt="" />
+                <img class="absolute bottom-2/4 left-[9%] top-[42%] w-[60%] drop-shadow-2xl" src="/img/maysam5.jpg"
+                    alt="" />
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="800"
+                class="projectMobile hanmudo relative bg-[rgb(230,230,230)]">
+                <div class="absolute z-10 mt-1 ml-2">
+                    <a class="relative inline-block transition-all duration-75 projectTitle before:bg-black hover:opacity-60"
+                        href="https://hanmudofars.ir/">hanmudofars.ir</a>
+                    <span class="projectDesk block text-[15px] font-light text-neutral-600">Marshal Arts & sport</span>
+                    <a class="block" href=""></a>
+                    <a
+                        class="inline-block px-3 py-2 mt-4 text-sm text-white rounded featureList bg-stone-800 hover:bg-stone-700">Features</a>
+                </div>
+                <div class="relative w-full h-full">
+                    <img class="absolute right-[15%] top-[47%] w-[65%]" src="/img/hanmudo2.jpg" alt="" />
+                    <img class="absolute right-[15%] top-[47%] w-[65%]" src="/img/hanmudo1.jpg" alt="" />
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="800" class="projectMobile sobhan relative bg-[rgba(0,40,0)]">
+                <div class="absolute mt-1 ml-2 text-white">
+                    <a class="relative inline-block transition-all duration-75 projectTitle before:bg-white hover:opacity-60"
+                        href="/portfolio/features/sobhan">sobhanjuice.com</a>
+                    <span class="projectDesk block text-[15px] font-light text-neutral-400">Fresh juice web shop</span>
+                    <a class="block" href=""></a>
+                </div>
+                <div class="TV absolute w-[95%]">
+                    <div class="relative">
+                        <img class="absolute z-10 w-[95%] rounded-sm" src="/img/sobhan.png" alt="" />
+                        <span id="tvSpan" class="absolute left-[10%] top-[.5rem] w-[75%] overflow-hidden">
+                            <img src="/img/sobhan2.jpg" id="imgTvSobhan" alt="" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="800" class="projectMobile shahri bg-[#fcffbd]">
+                <div class="absolute z-10 mt-1 ml-2">
+                    <a class="relative inline-block transition-all duration-75 projectTitle before:bg-black hover:opacity-60"
+                        href="/portfolio/features/shahri">shahrbanoonevesht.com</a>
+                    <span class="projectDesk block text-[15px] font-light text-neutral-600">
+                        Personal website for Author
+                    </span>
+                    <a class="block" href=""></a>
+                </div>
+                <img id="shahriImg" class="shahriImg absolute right-[25%] top-[50%] w-[50%]"
+                    src="/img/shahrbanoonevesht.jpg" alt="" />
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="800" data-aos-offset="150"
+                class="p-10 projectMobile group bg-zinc-700">
+                <div class="absolute z-10 h-32 w-50 left-2 top-2">
+                    <a href="https://oldversion.peymanakhtari.com"
+                        class="relative inline-block transition-all duration-75 projectTitle text-zinc-200 before:bg-zinc-200 hover:opacity-60">oldversion.peymanakhtari.com</a>
+                    <span class="projectDesk mt-1 block text-[15px] text-zinc-300">
+                        The old version of my portfolio website
+                    </span>
+                    <a
+                        class="inline-block px-3 py-2 mt-4 text-sm text-white rounded featureList bg-stone-800 hover:bg-stone-600">Features</a>
+                </div>
+                <div
+                    class="imgOldversionMobile absolute bottom-[5%] right-0 h-[55%] w-full bg-[url('/img/peyman-old-site-noshadow.png')] bg-cover transition-all duration-500 group-hover:scale-[1.06] group-hover:bg-[url('/img/my-old-site.png')]">
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden pl-4 portfolio lg:block" id="portfolioDesktop">
+            <div class="mx-auto mb-6 w-[70%] min-w-[50rem] max-w-[70rem]">
+                <h2 data-aos="fade-zoom-in" data-aos-offset="300" class="mb-0 text-left">
+                    Portfolio
+                </h2>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="1000" class="projectWindows group mt-16 bg-[#e7ffe9]">
+                <div class="absolute z-10 ml-4 mt-4 w-[40%]">
+                    <a class="projectTitle relative inline-block text-2xl transition-all duration-75 before:top-[1.9rem] before:bg-black hover:opacity-60"
+                        href="https://radicaltherapy.ir/">Radicaltherapy.ir</a>
+
+                    <span class="projectDesk mt-1 block text-[16px] text-zinc-900">
+                        Mental health & psychology treatment <br />
+                        <br />
+                        <span class="projectDesk2 text-zinc-700">
+                            This website offers a content management system, interactive
+                            comments with reply notifications, and a reservation system.
+                        </span>
+                    </span>
+                    <a
+                        class="inline-block px-3 py-2 mt-3 text-white rounded featureList bg-stone-800 hover:bg-stone-700">Features</a>
+                </div>
+                <img src="/img/radicaltherapy-desktop.png"
+                    class="imgradicalwindows relative w-full drop-shadow-[-0px_0px_1.5px_rgba(20,20,20,0.2)] group-hover:drop-shadow-[-3px_3px_9px_rgba(20,20,20,0.2)]"
+                    alt="" />
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="800" class="projectWindows group mt-16 bg-[#3f3f3f]">
+                <div class="absolute z-10 ml-4 mt-4 w-[40%]">
+                    <a class="projectTitle relative inline-block text-white transition-all duration-75 before:top-[1.9rem] before:bg-slate-50 hover:opacity-60"
+                        href="https://hotel.peymanakhtari.com/">hotel.peymanakhtari.com</a>
+                    <span class="projectDesk mb-5 block text-[16px] font-light text-slate-50">
+                        Hotel management panel
+                        <br /><br />
+                        <span class="projectDesk2">
+                            Register Folio, Managing rooms , Reserves & passengers, getting
+                            Reports.
+                        </span>
+                    </span>
+                    <a
+                        class="inline-block px-3 py-2 mt-1 text-sm rounded featureList bg-stone-800 text-slate-50 hover:bg-stone-700">Features</a>
+                </div>
+                <img src="/img/imghotelDesktop.png"
+                    class="absolute right-[50%] top-[30%] mx-auto w-[75%] translate-x-1/2 scale-[120%] transition-all duration-500 group-hover:scale-[140%] group-hover:drop-shadow-[-5px_-5px_13px_rgba(20,20,20,0.65)]"
+                    alt="" />
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="1000"
+                class="projectWindows maysamdesktop mt-16 bg-[rgb(19,19,19)]">
+                <div class="absolute z-10 ml-4 mt-4 w-[40%]">
+                    <a class="projectTitle relative inline-block text-2xl text-white transition-all duration-75 before:top-[1.9rem] before:bg-white hover:opacity-60"
+                        href="https://broedermaysam.nl/">broedermaysam.nl</a>
+                    <span class="projectDesk mt-1 block text-justify text-[16px] text-neutral-300">
+                        Nursing services & health care <br />
+                        <br />
+                        <span class="projectDesk2 text-neutral-400">
+                            This website serves as a representation of nursing services and
+                            shares similarities with a personal website.
+                        </span>
+                    </span>
+                </div>
+                <img src="/img/maysam2.jpg" class="absolute right-12 top-[20%] w-[40%]" alt="" />
+                <img src="/img/maysam5.jpg" class="absolute right-64 top-[40%] w-[40%]" alt="" />
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="1000" class="projectWindows hanmudo mt-16 bg-[rgb(230,230,230)]">
+                <div class="absolute z-10 ml-4 mt-4 w-[40%]">
+                    <a class="projectTitle relative inline-block text-2xl transition-all duration-75 before:top-[1rem ] before:bg-black hover:opacity-60"
+                        href="https://hanmudofars.ir/">hanmudofars.ir</a>
+                    <span class="projectDesk mt-1 block text-justify text-[16px] text-neutral-600">
+                        Marshal Arts & sport <br />
+                        <br />
+                        <span class="projectDesk2 text-neutral-500">
+                            Students can login and see marshal art tutorials based on the color
+                            of their belt.
+                        </span>
+                    </span>
+
+                    <a
+                        class="inline-block px-3 py-2 mt-1 text-white rounded featureList bg-stone-800 hover:bg-stone-700">Features</a>
+                </div>
+                <div class="relative w-full h-full">
+                    <img class="absolute right-[22%] top-[40%] w-[50%]" src="/img/hanmudo2.jpg" alt="" />
+                    <img class="absolute right-[22%] top-[40%] w-[50%]" src="/img/hanmudo1.jpg" alt="" />
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="1000" class="projectWindows sobhan mt-16 bg-[rgba(0,40,0)]">
+                <div class="absolute z-10 ml-4 mt-4 w-[40%]">
+                    <a class="projectTitle relative inline-block text-2xl text-white transition-all duration-75 before:top-[1.9rem] before:bg-white hover:opacity-60"
+                        href="/portfolio/features/sobhan">sobhanjuice.com</a>
+                    <span class="projectDesk mt-1 block text-justify text-[16px] text-neutral-300">
+                        Fresh juice web shop <br />
+                        <br />
+                        <span class="projectDesk2 text-neutral-400">
+                            Managing products with categories, getting location from user and
+                            calculating delivery price are some of features
+                        </span>
+                    </span>
+                </div>
+                <div class="TVdesktop absolute w-[86%]">
+                    <div class="relative">
+                        <img class="absolute z-10 w-[86%] rounded-sm" src="/img/sobhan.png" alt="" />
+                        <span id="tvSpanDesktop" class="absolute left-[10%] top-[.5rem] w-[66%] overflow-hidden">
+                            <img src="/img/sobhan2.jpg" id="imgTvSobhanDesktop" alt="" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-duration="1000" class="projectWindows shahriDesk mt-16 bg-[#fcffbd]">
+                <div class="absolute z-10 ml-4 mt-4 w-[40%]">
+                    <a class="projectTitle relative inline-block text-2xl transition-all duration-75 before:top-[1.7rem] before:bg-black hover:opacity-60"
+                        href="/portfolio/features/shahri">shahrbanoonevesht.com</a>
+                    <span class="projectDesk mt-1 block text-justify text-[16px] text-neutral-600">
+                        Personal website for Author <br />
+                        <br />
+                    </span>
+                </div>
+                <img id="shahriImg" class="shahriImgDesk absolute right-[29%] top-[60%] w-[42%]"
+                    src="/img/shahrbanoonevesht.jpg" alt="" />
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="mt-16 projectWindows group bg-zinc-700">
+                <div class="absolute z-10 ml-4 mt-4 w-[40%]">
+                    <a class="relative inline-block text-2xl projectTitle text-zinc-200 before:bg-zinc-200"
+                        href="https://oldversion.peymanakhtari.com">Oldversion.peymanakhtari.com</a>
+                    <span class="projectDesk mt-1 block text-justify text-[16px] text-zinc-200">
+                        The old version of my portfolio website <br />
+                    </span>
+                    <a
+                        class="inline-block px-3 py-2 mt-3 text-white rounded featureList bg-stone-800 hover:bg-stone-700">Features</a>
+                </div>
+                <div
+                    class="imgOldversionDesk absolute bottom-[10%] h-[55%] w-full bg-[url('/img/peyman-old-site-noshadow.png')] bg-cover transition-all duration-500 group-hover:scale-[1.06] group-hover:bg-[url('/img/my-old-site.png')]">
+                </div>
+            </div>
+        </section>
+
+        <div class="mx-auto mt-24 w-[90%] max-w-[30rem] lg:w-[70%] lg:min-w-[50rem] lg:max-w-[70rem]">
+            <h3 class="my-4 text-[18px] font-bold">My signature</h3>
+            <p>
+                I include my name and email at the bottom of the "Contact Us" page of all
+                the websites on which I've worked, similar to what you can see in the box
+                below as my signature.
+            </p>
+            <a class="text-blue-500 hover:underline" href="https://hanmudofars.ir/Home/ContactUs?elem=peyman">
+                My signature on HanmudoFars website
+            </a>
+            <div data-aos="flip-left" data-aos-duration="900"
+                class="mx-auto mt-6 w-80 rounded-[32px] border-[4px] border-zinc-900">
+                <div class="rounded-[28px] border-[4px] border-zinc-200 bg-zinc-900 text-zinc-100">
+                    <span class="block p-3 pt-5 text-center">Web developer: Peyman Akhtari</span>
+                    <span class="block p-3 pb-5 text-center">peyman.firelance@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script src="/js/portfolio.js"></script>
+
+
+
+
+    <script src="/js/js.js"></script>
+
+</body>
+
+</html>

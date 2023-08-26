@@ -1,0 +1,30 @@
+.protfoH3 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+:root {
+  --animate-delay: 0.5s;
+}
+.portfoSpan {
+  box-shadow: 0 0 100px rgba(253, 253, 253, 0.863);
+}
+
+.shake {
+  animation: shake 0.5s ease infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25%,
+  75% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+}

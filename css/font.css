@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "blessing";
+  src:
+    url("../font/Blessing.woff") format("woff"),
+    url("../font/Blessing.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Summer Rise";
+  src:
+    url("../font/Summer Rise.woff") format("woff"),
+    url("../font/Summer Rise.woff2") format("woff2");
+}
